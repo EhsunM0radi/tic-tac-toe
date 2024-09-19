@@ -83,7 +83,7 @@ export default {
         winner: winner,
         moves: history
       };
-      axios.post('http://127.0.0.1:8000/api/generate-token', gameData)   
+      axios.post('http://tic-tac-toe-api.test/api/generate-token', gameData)   
         .then(response => {
           console.log('Game result sent successfully:', response.data);
         })
